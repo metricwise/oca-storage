@@ -54,7 +54,7 @@ odoo.define("storage_image.FieldStorageImageHandle", function (require) {
             }).then((record_ids) => {
                 const context = record_ids.map(
                     (rec_id) =>
-                        new Object({
+                        ({
                             default_image_id: rec_id,
                         })
                 );
